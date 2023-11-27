@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    width: fit-content;
+    margin: auto;
+}
+
+.info {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.resetGame {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.reset-btn {
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+    background-color: #d4cbbc;
+    border: none;
+    border-radius: 5px;
+}
+
+.reset-btn:hover {background-color: #4e4f4e} /* Darker grey when hovered */
+
+.reset-btn:active {
+    background-color: #8c8f8c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    color: white;
+}
+.count_container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.points_container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.fail_container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    background-color: #F3EEEA;
+    padding: 24px;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 18px;
+    width: 640px;
+    margin: 16px auto;
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    background-color: #B0A695(184, 184, 184);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    border: 3px solid #61574b;
+}
+.hidden-card {
+    position: absolute;
+    top:0;
+    z-index: 10;
+    background-color: #776B5D;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    border: 3px solid #61574b;
+}
+
+@media screen and (max-width: 600px) {
+    .card-container {
+        width: auto;
+    }
+}
