@@ -31,17 +31,19 @@ h1 {
     cursor: pointer;
     text-decoration: none;
     outline: none;
-    color: #000000;
-    background-color: #d4cbbc;
-    border: none;
+    color: #484138;
+    background-color: #ccc9c5;
+    border: 3px solid #afa8a1;
     border-radius: 5px;
 }
 
-.reset-btn:hover {background-color: #4e4f4e} /* Darker grey when hovered */
+.reset-btn:hover {
+    background-color: #61574b
+}
 
 .reset-btn:active {
-    background-color: #8c8f8c;
-    box-shadow: 0 5px #666;
+    background-color: #61574b;
+    box-shadow: 0 5px #534a3e;
     transform: translateY(4px);
     color: white;
 }
@@ -64,8 +66,9 @@ h1 {
 }
 
 .container {
-    width: 100vw;
+    width: auto;
     height: auto;
+    min-height: 100vh;
     background-color: #F3EEEA;
     padding: 24px;
 }
@@ -83,7 +86,7 @@ h1 {
 .card {
     width: 80px;
     height: 80px;
-    background-color: #B0A695(184, 184, 184);
+    background-color: #9a8f7c(184, 184, 184);
     position: relative;
     display: flex;
     justify-content: center;
